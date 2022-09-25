@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	int choice ;
+	printf("Enter two integers\n");
+	scanf("%d%d",&a,&b);
+	printf("\nPress\n1 = add\n2 = sub\n3 = multi\n4 = div\n");
+	
+	printf("\nEnter your Choice\n");
+	scanf("%d",&choice);
+	
+	if (choice <= 4 && choice >= 1)
+	{
+			if(choice == 1)
+				{
+					printf("adddition = %d\n",a+b);
+				}
+	
+			else if(choice == 2)
+				{
+					printf("\nsubtraction = %d",a-b);
+				}
+				
+			else if(choice == 3)
+				{
+					printf("\nmultiplication = %d\n",a*b);
+				}
+				
+			else if(choice == 4)
+				{
+					printf("\nDivision = %f",(float)a/b);
+				}
+	}
+	else
+	{
+		printf("Wrong Choice");
+	}
+	
+	return 0;
+}
